@@ -71,7 +71,7 @@ body {
 
 .container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 16px;
   text-align: center;
 }
@@ -83,6 +83,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  gap: 4px;
 }
 
 .italic {
@@ -108,4 +109,10 @@ body {
 
 .add:active {
   background-color: gray;
+}
+
+.controls {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
 }
